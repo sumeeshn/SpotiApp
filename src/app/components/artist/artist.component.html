@@ -6,7 +6,7 @@
         <h1>{{artist.name}}</h1>
         <h5>Followers: {{artist.followers.total}}</h5>
         <p *ngIf = "artist.genres.length > 0">
-            Genres: <span *ngFor = "let genre of artist.genres">{{genre}}</span>
+            Genres: <span *ngFor = "let genre of artist.genres">{{genre}} . </span>
         </p>
     </header>
 
@@ -17,7 +17,7 @@
                     <div class="well album">
                         <div *ngIf = "album.images.length > 0">
                             <img class="album-thumb img-thumbnail" src="{{album.images[0].url}}"/>
-                            <h4>{{album.name}}</h4>
+                            <h6>{{album.name}}</h6><hr/>
                             <a class = "btn btn-default btn-block" routerLink="/album/{{album.id}}">Album Details</a>
                         </div>
                     </div>
