@@ -1,1 +1,3 @@
 This is an Angular 2 web application which uses Spotify API to search through Songs, Artists, Albums. Users can preview the song (30s sample), they can go to spotify to listen to full song.
+
+![Alt text](/Screenshot/SearchPage.png?raw=true "Login Page")
